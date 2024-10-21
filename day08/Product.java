@@ -3,21 +3,25 @@ package day08;
 import java.util.Date;
 
 public class Product {
-    Long id;
-    String prodName;
-    String prodDesc;
-    String prodCat;
-    Float price;
-    Date createdDate;
-    
+    private Long id;
 
-    public Product(Long id, String prodName, String prodDesc, String prodCat, Float price, Date createdDate) {
+    private String name;
+
+    private String Description;
+
+    private String category;
+
+    private Float price;
+
+    private Date createDate;
+
+    public Product(Long id, String name, String description, String category, Float price, Date createDate) {
         this.id = id;
-        this.prodName = prodName;
-        this.prodDesc = prodDesc;
-        this.prodCat = prodCat;
+        this.name = name;
+        Description = description;
+        this.category = category;
         this.price = price;
-        this.createdDate = createdDate;
+        this.createDate = createDate;
     }
 
     public Long getId() {
@@ -28,28 +32,28 @@ public class Product {
         this.id = id;
     }
 
-    public String getProdName() {
-        return prodName;
+    public String getName() {
+        return name;
     }
 
-    public void setProdName(String prodName) {
-        this.prodName = prodName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getProdDesc() {
-        return prodDesc;
+    public String getDescription() {
+        return Description;
     }
 
-    public void setProdDesc(String prodDesc) {
-        this.prodDesc = prodDesc;
+    public void setDescription(String description) {
+        Description = description;
     }
 
-    public String getProdCat() {
-        return prodCat;
+    public String getCategory() {
+        return category;
     }
 
-    public void setProdCat(String prodCat) {
-        this.prodCat = prodCat;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public Float getPrice() {
@@ -58,20 +62,20 @@ public class Product {
 
     public void setPrice(Float price) {
         this.price = price;
+    }    
+
+    public Date getCreateDate() {
+        return createDate;
     }
 
-    public Date getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 
     @Override
     public String toString() {
-        return "Product [id=" + id + ", prodName=" + prodName + ", prodDesc=" + prodDesc + ", prodCat=" + prodCat
-                + ", price=" + price + ", createdDate=" + createdDate + ", toString()=" + super.toString() + "]";
-    }  
+        return "Product [id=" + id + ", name=" + name + ", Description=" + Description + ", category=" + category
+                + ", createDate=" + createDate + "]";
+    }
     
 }
