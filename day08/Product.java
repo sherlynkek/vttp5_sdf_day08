@@ -3,6 +3,7 @@ package day08;
 import java.util.Date;
 
 public class Product {
+
     private Long id;
 
     private String name;
@@ -77,5 +78,4 @@ public class Product {
         return "Product [id=" + id + ", name=" + name + ", Description=" + Description + ", category=" + category
                 + ", createDate=" + createDate + "]";
     }
-    
 }

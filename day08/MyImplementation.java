@@ -1,5 +1,6 @@
 package day08;
 public class MyImplementation implements Runnable {
+
     @Override
     public void run() {
 
@@ -7,4 +8,5 @@ public class MyImplementation implements Runnable {
             System.out.println("Thread: " + Thread.currentThread().getName()  + "-> " + i);
         }
     }
+    
 }
